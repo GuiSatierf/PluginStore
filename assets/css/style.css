@@ -240,7 +240,7 @@ body {
 
 .ank .discord-ank a {
     align-items: center;
-    background: #404EED;
+    background: #b3682f;
     border-radius: 20px;
     color: #fff;
     display: flex;
@@ -253,9 +253,17 @@ body {
     padding: 0px 5px;
 }
 
+
+
+
+
+
+
 /*Modal*/
 
-.modal {
+/*Modal one*/
+
+.modalOne {
     position: fixed;
     left: 0;
     top: 0;
@@ -268,7 +276,7 @@ body {
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
-.modal-content {
+.modal-contentOne {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -279,21 +287,73 @@ body {
     border-radius: 0.5rem;
 }
 
-.modal-content ul {
+.modal-contentOne ul {
     list-style: none;
     text-align: left;
 }
 
-.modal .close-modal {
+.modalOne .close-modalOne {
     opacity: 0;
 }
 
-.show-modal {
+.show-modalOne {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
+
+/*Modal Two*/
+
+.modalTwo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-contentTwo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191919;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.modal-contentTwo ul {
+    list-style: none;
+    text-align: left;
+}
+
+.modalTwo .close-modalTwo {
+    opacity: 0;
+}
+
+.show-modalTwo {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+
+
+
+
+
+
+
+
 
 .tutorial {
     display: flex;
@@ -302,7 +362,6 @@ body {
     text-align: center;
 }
 
-.tutorial img {
-    width: 65%;
-    padding: 2em;
+.tutorial .video-container {
+    margin: 2em;
 }
